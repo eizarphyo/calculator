@@ -1,0 +1,112 @@
+@font-face {
+    font-family: Alkatra;
+    src: url(fonts/Alkatra-VariableFont_wght.ttf);
+}
+
+body {
+    background: linear-gradient(55deg, #CCFFFF,  #FFCCCC);
+    font-family: Alkatra, cursive;
+}
+
+main{
+    padding: 0px, 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* the whole calculator elements*/
+.cal-container {
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    margin: auto;
+    height: 85vh;
+    background-color: rgb(135, 206, 250, 0.07);
+    box-shadow: 0 7px 20px rgb(70, 130, 180, 0.5);
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .cal-container {
+        width: 90vw;
+    }
+
+    .cal-btn {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .cal-container {
+        width: 40vw;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+    .cal-container {
+        width: 28vw;
+    }
+}
+
+/* xl laptop */
+@media screen and (min-width: 1500px) {
+    .cal-container {
+        width: 400px;
+    }
+}
+
+.display-box{
+    width: inherit;
+    height: 55px;
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: aliceblue;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.19);
+
+} 
+
+.cal-btn {
+    width: 55px;
+    height: 55px;
+    border: 1px solid lightsteelblue;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.19);
+}
+
+.btn-dot {
+    padding-top: 20px;
+}
+
+.btn-invisible {
+    border: transparent;
+    background-color: transparent;
+    box-shadow: 0 0 0 rgba(0,0,0,0);;
+}
+
+/* rows */
+.btn-container {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* display, button-rows */
+.wrapper {
+    padding: 20px;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+}
+
